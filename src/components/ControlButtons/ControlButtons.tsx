@@ -9,5 +9,9 @@ export default function ControlButtons() {
     setBounds();
   }
 
-  return <Button onClick={handleClick}>NDVI</Button>;
+  return (
+    <Button variant="outlined" onClick={handleClick}>
+      S1VV
+    </Button>
+  );
 }

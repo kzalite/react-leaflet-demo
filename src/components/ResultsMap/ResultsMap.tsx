@@ -10,8 +10,8 @@ export default function ResultsMap() {
   const baseWcsUrl: string = serviceEndPoint + '?service=WCS&version=2.0.1';
 
   const request: string = '&REQUEST=GetCoverage';
-  const coverageId: string = '&COVERAGEID=S2_L2A_32631_TCI_60m';
-  const subsetTime: string = '&SUBSET=ansi("2017-04-03")';
+  const coverageId: string = '&COVERAGEID=S1_GRD_IW_VV';
+  const subsetTime: string = '&SUBSET=ansi("2017-06-01")';
 
   const encodeFormat: string = '&FORMAT=image/jpeg';
 
@@ -19,10 +19,8 @@ export default function ResultsMap() {
 
   useEffect(() => {
     if (!_.isEmpty(bounds)) {
-      //   const subsetLongitude: string = `&SUBSET=E(${bounds[0]},${bounds[1]})`;
-      //   const subsetLatitude: string = `&SUBSET=N(${bounds[2]},${bounds[3]})`;
-      const subsetLongitude: string = `&SUBSET=E(641395,668861)`;
-      const subsetLatitude: string = `&SUBSET=N(5313111,5329559)`;
+      const subsetLongitude: string = `&SUBSET=Lon(${bounds[0]},${bounds[1]})`;
+      const subsetLatitude: string = `&SUBSET=Lat(${bounds[2]},${bounds[3]})`;
 
       axios
         .get(
