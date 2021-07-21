@@ -39,5 +39,10 @@
 
 .leaflet-container {
   height: 500px;
-  width: 500px;
+  width: 100%;
+}
+
+.result-map {
+  height: 500px;
+  width: 100%;
 }
