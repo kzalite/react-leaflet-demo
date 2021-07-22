@@ -15,10 +15,16 @@ export default function App() {
             <Grid item xs={5}>
               <LookupMap />
             </Grid>
-            <Grid item xs={2}>
+            <Grid container item xs={2} alignItems="center">
               <ControlButtons />
             </Grid>
-            <Grid item xs={5}>
+            <Grid
+              container
+              item
+              xs={5}
+              justifyContent="center"
+              alignItems="center"
+            >
               <ResultsMap />
             </Grid>
           </Grid>

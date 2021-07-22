@@ -3,10 +3,10 @@ import React, {useContext} from 'react';
 import {MapContext} from 'src/contexts/MapContext';
 
 export default function ControlButtons() {
-  const {setBounds} = useContext(MapContext);
+  const {calculateResults} = useContext(MapContext);
 
   function handleClick() {
-    setBounds();
+    calculateResults('s1vv');
   }
 
   return (

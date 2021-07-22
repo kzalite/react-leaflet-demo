@@ -14,7 +14,7 @@ export default function LookupMap() {
     <MapContainer
       center={position}
       zoom={zoom}
-      scrollWheelZoom={false}
+      scrollWheelZoom={true}
       whenCreated={setMap}
     >
       <TileLayer

@@ -1,8 +1,10 @@
 import {Map} from 'leaflet';
 
 export default interface IMap {
-  bounds: number[];
+  areResultsAvailable: boolean;
+  areResultsLoading: boolean;
+  imageData: any;
   map: Map | undefined;
   setMap: (map: Map) => void;
-  setBounds: () => void;
+  calculateResults: (type: any) => void;
 }
