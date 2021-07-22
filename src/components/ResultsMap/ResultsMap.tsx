@@ -1,7 +1,6 @@
-import {Box, CircularProgress, Typography} from '@material-ui/core';
-import axios, {AxiosResponse} from 'axios';
+import {CircularProgress, Typography} from '@material-ui/core';
 import _ from 'lodash';
-import React, {useContext, useEffect, useState} from 'react';
+import React, {useContext} from 'react';
 import {MapContext} from 'src/contexts/MapContext';
 
 export default function ResultsMap() {

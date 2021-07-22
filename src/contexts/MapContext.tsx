@@ -1,7 +1,7 @@
 import axios, {AxiosResponse} from 'axios';
 import {Map} from 'leaflet';
 import _ from 'lodash';
-import React, {createContext, useCallback, useEffect, useState} from 'react';
+import React, {createContext, useCallback, useState} from 'react';
 import IMapContext from './IMapContext';
 
 export const MapContext = createContext<IMapContext>({} as IMapContext);
